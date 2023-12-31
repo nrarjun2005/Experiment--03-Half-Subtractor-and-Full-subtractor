@@ -33,22 +33,49 @@ Write the detailed procedure here
 
 
 ## Program:
+half subtractor:
+module expthree(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference = (a^b);
+assign borrow = (~a&b);
+endmodule
+full subtractor:
+module expfour(a,b,c,difference,borrow);
+input a,b,c;
+output difference,borrow;
+assign difference=(a^b^c);
+assign borrow=(~a&(b^c)|(b&c));
+endmodule
 /*
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: ARJUNSHA NR
+RegisterNumber: 212223050007 
 */
 
 ## Output:
 
 ## Truthtable
+half subtractor:
+![image](https://github.com/vasanthkumarch/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/155224066/2e9455d6-39f7-48f4-b84d-46dff9de1bfa)
 
+full subtractor:
+![image](https://github.com/vasanthkumarch/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/155224066/45866d71-bb46-4b06-9e7c-3157604042d1)
 
 
 ##  RTL realization
+half subtractor:
+![image](https://github.com/vasanthkumarch/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/155224066/d43f701f-624c-4e9d-b768-9d1b35661b08)
 
+full subtractor:
+![image](https://github.com/vasanthkumarch/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/155224066/22aa0475-d2b1-4262-9674-b1b48bfcf8ac)
 
 ## Timing diagram 
+half subtractor:
+![image](https://github.com/vasanthkumarch/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/155224066/7f424cdf-980a-4a16-85ed-4c86bf0e4817)
+
+full subtractor:
+![image](https://github.com/vasanthkumarch/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/155224066/18b3ecfd-f6bc-42fe-8cf7-3833bab29268)
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
